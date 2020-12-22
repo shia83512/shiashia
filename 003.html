@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,"微軟正黑體";
+        }
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        .box4 {
+            width: 100%;
+            height: 700px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box4 .s-box1 {
+            width: 1000px;
+            height: 600px;
+            background: white;
+            display: flex;
+        }
+        .box4 .s-box1 .ss-box1 {
+            width: 50%;
+            height: 100%;
+            background: white;
+            padding: 5px;
+        }
+        .contain {
+            width: 100%;
+            height: 40%;
+            display: flex;
+        }
+        .box4 .s-box1 .ss-box1 .sss-box1 {
+            width: 50%;
+            height: 100%;
+            /*   background: yellow; */
+            padding: 10px;
+        }
+        .box4 .s-box1 .ss-box1 .sss-box2 {
+            width: 50%;
+            height: 100%;
+            /*   background: blue; */
+            padding: 10px;
+        }
+        .box4 .sss-box3 {
+            width: 100%;
+            height: 60%;
+            /*   background: green; */
+            padding: 10px;
+        }
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s;
+        }
+        .image:hover {
+            transform: scale(1.3);
+            }
+            .wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .wrapper:hover {
+            transform: scale(0.9);
+        }
+        .text {
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box4">
+        <div class="s-box1">
+          <div class="ss-box1">
+            <div class="contain">
+              <div class="sss-box1">
+                <div class="wrapper">
+                  <img src="images/3.jpg" alt="" class="image">
+                </div>              
+              </div>
+              <div class="sss-box2">
+                <div class="wrapper">
+                  <img src="images/4.jpg" alt="" class="image">
+                </div>             
+              </div>
+            </div>
+            <div class="sss-box3">
+              <div class="wrapper">
+                <img src="images/5.jpg" alt="" class="image">
+              </div>            
+            </div>
+          </div>
+          <div class="ss-box1">
+            <div class="sss-box3">
+              <div class="wrapper">
+                <img src="images/10.jpg" alt="" class="image">
+              </div>            
+            </div>
+            <div class="contain">
+              <div class="sss-box1">
+                <div class="wrapper">
+                  <img src="images/7.jpg" alt="" class="image">
+                </div>              
+              </div>
+              <div class="sss-box2">
+                <div class="wrapper">
+                  <img src="images/8.jpg" alt="" class="image">
+                </div>             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text">@版權所有</div>
+</body>
+</html>
